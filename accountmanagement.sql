@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2018 at 08:00 AM
--- Server version: 10.1.31-MariaDB
--- PHP Version: 7.2.4
+-- Generation Time: May 12, 2018 at 12:52 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 5.6.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `accountmanagement`
 --
+CREATE DATABASE IF NOT EXISTS `accountmanagement` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `accountmanagement`;
 
 -- --------------------------------------------------------
 
@@ -28,22 +30,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `account`
 --
 
+DROP TABLE IF EXISTS `account`;
 CREATE TABLE `account` (
   `fullname` varchar(50) NOT NULL,
   `username` varchar(30) NOT NULL,
   `password` varchar(50) NOT NULL,
   `createdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`fullname`, `username`, `password`, `createdate`) VALUES
-('gsdgsd', 'fsdfds', 'fdsfdsf', '2018-05-10 00:00:00'),
-('gsdgsd', 'fsdfds', 'fdsfdsf', '2018-05-10 00:00:00'),
-('fsdfasd', 'sda', 'dasds', '2018-05-10 00:00:00'),
-('Nguy?n V?n An', 'tùng', 'fdkfsdfd', '2018-05-10 00:00:00');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
