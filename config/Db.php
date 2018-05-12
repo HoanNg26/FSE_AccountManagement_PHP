@@ -23,6 +23,7 @@ class Db {
         if(self::$connection == false){
             return false;
         }
+        mysqli_set_charset(self::$connection,"utf8");
         return self::$connection;
     }
     

@@ -27,7 +27,7 @@ class AccountDAL {
         $image = $acc->getImage();
         $queryString = "INSERT INTO `account` (`fullname`, `username`, `password`, `createddate`, `img`) "
                 . "VALUES ('$fullname', '$username', '$password', '$createddate', '$image')";
-//        var_dump($queryString);
+        var_dump($queryString);
 //                die();
         $result = $db->excuteQuery($queryString);
         return $result;

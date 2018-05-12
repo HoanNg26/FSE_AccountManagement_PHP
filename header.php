@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html lang="vi">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="author" content="Nguyễn Công Hoan">
         <link href="/content/ac.css" rel="stylesheet">
         <title>Account Management 1.0</title>
